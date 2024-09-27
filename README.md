@@ -22,4 +22,4 @@ To run this project locally, follow these steps:
 
 1. **Clone the Repository**: 
    ```bash
-   git clone https://github.com/yourusername/jersey-collection.git
+https://github.com/Alvineeee/Galaxy-Jersey-Store.git
