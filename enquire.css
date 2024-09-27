@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('futaa.jpg');
+    background-size: cover;
+    background-position: center; /* Center the background image */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #0fff;
+}
+
+.order {
+    max-width: 400px;
+    margin: 40px auto; /* Center the form and add space from the top */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.order h2 {
+    color: #0fff;
+    text-align: center; /* Center the heading */
+}
+
+.order label {
+    display: block;
+    margin-bottom: 5px; /* Fixed typo: changed '1opx' to '5px' */
+    font-weight: bold;
+}
+
+.order input[type="text"],
+.order input[type="email"],
+.order select,
+.order textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.order button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: greenyellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.order button:hover {
+    background-color: #444; /* Add hover effect for the button */
+}
+
+.testimonials {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial p.author {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.brand-logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.brand-slogan {
+    font-size: 24px;
+    font-weight: bold;
+    animation: pulse 2s infinite alternate;
+    color: greenyellow;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px; /* Adjust as needed */
+    transform: translateY(-50%);
+}

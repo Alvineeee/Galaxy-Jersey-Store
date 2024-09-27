@@ -1,0 +1,179 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation styles */
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #5cb85c;
+}
+
+/* Hero Section with updated readability */
+.hero {
+    position: relative;
+    background-image: url('Football.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero h1, .hero p, .hero a {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero a:hover {
+    background-color: #cc5200;
+}
+
+/* Featured Products Section */
+.featured {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.featured h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+    }
+
+    .product-grid {
+        flex-direction: column;
+    }
+}

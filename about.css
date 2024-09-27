@@ -1,0 +1,102 @@
+body {
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('stadium.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better visibility */
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.9); /* Slight transparency for the header */
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ff0;
+}
+
+.about {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Add semi-transparent background for text */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; /* Set a max width to prevent stretching */
+}
+
+.about h2, .about h3 {
+    font-size: 28px;
+    color: greenyellow;
+    margin-bottom: 15px;
+}
+
+.about p {
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f1f1f1; /* Lighter text for better visibility */
+}
+
+.social-media-icons {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.social-media-icons li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media-icons img {
+    width: 70px;
+    height: 60px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

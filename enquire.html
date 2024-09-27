@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order</title>
+    <link rel="stylesheet" href="enquire.css">
+</head>
+<body>
+    <header>
+        <span class="icon">📞</span> 
+        <div class="brand-logo">Jersey Collection</div>
+        <h1>Welcome to Jersey Collection</h1>
+        <p class="brand-slogan">GALAXY JERSEY COLLECTION</p>
+        <nav>
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="enquire.html">Order</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order">
+            <h2>Order Your Favorite Jersey Today!</h2>
+            <div class="order-form">
+                <form action="">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="jersey">Select Jersey:</label>
+                    <select id="jersey" name="jersey" required>
+                        <option value="" disabled selected>Select your jersey</option>
+                        <option value="football">Football Jersey</option>
+                        <option value="basketball">Basketball Jersey</option>
+                        <option value="soccer">Soccer Jersey</option>
+                        <option value="baseball">Baseball Jersey</option>
+                    </select>
+
+                    <label for="size">Size:</label>
+                    <select id="size" name="size" required>
+                        <option value="" disabled selected>Select your size</option>
+                        <option value="s">Small</option>
+                        <option value="m">Medium</option>
+                        <option value="l">Large</option>
+                        <option value="xl">Extra Large</option>
+                    </select>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+
+                    <label for="message">Additional Notes:</label>
+                    <textarea name="message" id="message" placeholder="Any specific requests or messages"></textarea>
+
+                    <button type="submit" class="btn">Submit Order</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <p>"I love the quality of jerseys I received from Jersey Collection. Highly recommended!"</p>
+                <p class="author">Sloppy Cake</p>
+            </div>
+            <div class="testimonial">
+                <p>"Amazing customer service!"</p>
+                <p class="author">Luton Kelly</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
